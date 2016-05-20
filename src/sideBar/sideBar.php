@@ -12,7 +12,7 @@
 
     .container {
         display: table;
-        width: 100%
+        width: 100%;
     }
 
     #titleDiv {
@@ -31,17 +31,26 @@
     }
 
     #headerDiv {
-        height: 50px;
         background: #3A9CFF;
         display: table-cell;
         width: auto;
     }
 
+    .containerTwo {
+
+        display: table;
+        width: 100%;
+    }
+
+
     nav {
         background: #3D464D;
         width: 200px;
-        height:100%;
-        position:absolute;
+
+        top: 50px;;
+        left: 0px;;
+        bottom: 0px;
+        position: absolute;
     }
 
     nav ul {
@@ -63,23 +72,36 @@
 
 <body>
 
-<div class="container">
+<header class="container">
     <div id="titleDiv">
         IronRoot
     </div>
     <div id="headerDiv">
     </div>
 
-</div>
+</header>
 
 <nav>
-    <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li>Dashboard</li>
-        <li>Dashboard</li>
+    <ul id="nav"
+    <li><a href="#">Dashboard</a></li>
+    <li>Dashboard</li>
+    <li>Dashboard</li>
     </ul>
+    <p onclick="alert('word')" ;>this is </p>
+    <p onclick="$(this).hide();">asdfasdddddf</p>
 </nav>
 
+<script type='text/javascript' src='../../js/jquery.js'>
 
+    $(document).ready(function () {
+
+        $('#nav li a').click(function () {
+            // function here
+            alert('test');
+        });
+    });
+
+
+</script>
 </body>
 </html>
