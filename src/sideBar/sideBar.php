@@ -66,6 +66,11 @@
 
     nav ul li a {
         text-decoration: none;
+
+        margin: 0px;
+        padding: 10px;
+        text-align: left;
+        color: floralwhite;
     }
 
 </style>
@@ -82,9 +87,9 @@
 </header>
 
 <nav>
-    <ul id="nav"
-    <li><a href="#">Dashboard</a></li>
-    <li>Dashboard</li>
+    <ul id="nav">
+    <li><a href="../dashboard/dashboard.php">Dashboard</a></li>
+    <li><a href="../barrel/barrel.php">Barrel</a></li>
     <li>Dashboard</li>
     </ul>
     <p onclick="alert('word')" ;>this is </p>
